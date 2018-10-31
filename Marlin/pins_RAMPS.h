@@ -69,14 +69,14 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN           3
-#ifndef X_MAX_PIN
-  #define X_MAX_PIN         2
+#define Y_MIN_PIN           3
+#ifndef Y_MAX_PIN
+  #define Y_MAX_PIN         2
 #endif
-#define Y_MIN_PIN          14
-#define Y_MAX_PIN          3
-#define Z_MIN_PIN          18
-#define Z_MAX_PIN          19
+#define Z_MIN_PIN          14
+#define Z_MAX_PIN          3
+#define X_MIN_PIN          18
+#define X_MAX_PIN          19
 
 //
 // Z Probe (when not Z_MIN_PIN)
@@ -88,25 +88,25 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         54
-#define X_DIR_PIN          55
-#define X_ENABLE_PIN       38
-#ifndef X_CS_PIN
-  #define X_CS_PIN         53
-#endif
-
-#define Y_STEP_PIN         60
-#define Y_DIR_PIN          61
-#define Y_ENABLE_PIN       56
+#define Y_STEP_PIN         54
+#define Y_DIR_PIN          55
+#define Y_ENABLE_PIN       38
 #ifndef Y_CS_PIN
-  #define Y_CS_PIN         49
+  #define Y_CS_PIN         53
 #endif
 
-#define Z_STEP_PIN         46
-#define Z_DIR_PIN          48
-#define Z_ENABLE_PIN       62
+#define Z_STEP_PIN         60
+#define Z_DIR_PIN          61
+#define Z_ENABLE_PIN       56
 #ifndef Z_CS_PIN
-  #define Z_CS_PIN         40
+  #define Z_CS_PIN         49
+#endif
+
+#define X_STEP_PIN         46
+#define X_DIR_PIN          48
+#define X_ENABLE_PIN       62
+#ifndef X_CS_PIN
+  #define X_CS_PIN         40
 #endif
 
 #define E0_STEP_PIN        26
@@ -161,20 +161,20 @@
    * Software serial
    */
 
-  #define X_SERIAL_TX_PIN    40
-  #define X_SERIAL_RX_PIN    63
-  #define X2_SERIAL_TX_PIN   -1
-  #define X2_SERIAL_RX_PIN   -1
-
-  #define Y_SERIAL_TX_PIN    59
-  #define Y_SERIAL_RX_PIN    64
+  #define Y_SERIAL_TX_PIN    40
+  #define Y_SERIAL_RX_PIN    63
   #define Y2_SERIAL_TX_PIN   -1
   #define Y2_SERIAL_RX_PIN   -1
 
-  #define Z_SERIAL_TX_PIN    42
-  #define Z_SERIAL_RX_PIN    65
+  #define Z_SERIAL_TX_PIN    59
+  #define Z_SERIAL_RX_PIN    64
   #define Z2_SERIAL_TX_PIN   -1
   #define Z2_SERIAL_RX_PIN   -1
+
+  #define X_SERIAL_TX_PIN    42
+  #define X_SERIAL_RX_PIN    65
+  #define X2_SERIAL_TX_PIN   -1
+  #define X2_SERIAL_RX_PIN   -1
 
   #define E0_SERIAL_TX_PIN   44
   #define E0_SERIAL_RX_PIN   66
