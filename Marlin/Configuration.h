@@ -558,7 +558,7 @@
   // Delta calibration menu
   // uncomment to add three points calibration menu option.
   // See http://minow.blogspot.com/index.html#4918805519571907051
-  #define DELTA_CALIBRATION_MENU
+  //#define DELTA_CALIBRATION_MENU
 
   // uncomment to add G33 Delta Auto-Calibration (Enable EEPROM_SETTINGS to store results)
   #if ANYCUBIC_PROBE_VERSION > 0
@@ -586,7 +586,7 @@
     // Center-to-center distance of the holes in the diagonal push rods.
     #define DELTA_DIAGONAL_ROD 271.5 // mm << maybe change this to 167
       // Horizontal offset from middle of printer to smooth rod center.
-    #define DELTA_SMOOTH_ROD_OFFSET 186 // mm OLD: 187
+    #define DELTA_SMOOTH_ROD_OFFSET 185 // mm OLD: 187
     // Horizontal offset of the universal joints on the end effector.
     #define DELTA_EFFECTOR_OFFSET 31 // mm
     // Horizontal offset of the universal joints on the carriages.
