@@ -88,7 +88,7 @@
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "@brandstaetter, @grbd" // Who made the changes.
-#define SHOW_BOOTSCREEN
+//#define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 "Welcome to ANYCUBIC"         // will be shown during bootup in line 2
 
@@ -553,7 +553,7 @@
   //#define DELTA_FEEDRATE_SCALING
 
   // After homing move down to a height where XY movement is unconstrained
-  #define DELTA_HOME_TO_SAFE_ZONE
+  //#define DELTA_HOME_TO_SAFE_ZONE
 
   // Delta calibration menu
   // uncomment to add three points calibration menu option.
@@ -603,7 +603,7 @@
   #endif
 
   // height from z=0 to home position
-  #define DELTA_HEIGHT 300.6 // get this value from auto calibrate
+  #define DELTA_HEIGHT 300.6-0.1 // get this value from auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // get these from auto calibrate
 
