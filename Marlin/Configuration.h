@@ -21,12 +21,13 @@
  */
 
 /**
- * Choose your version: 
+ * Choose your version:
  */
 // normal size or plus?
-#define ANCYUBIC_KOSSEL_PLUS 
+#define ANYCUBIC_KOSSEL_PLUS 
 // Anycubic Probe version 1 or 2 see README.md; 0 for no probe
 #define ANYCUBIC_PROBE_VERSION 0
+
 // Heated Bed: 
 // 0 ... no heated bed
 // 1 ... aluminium heated bed with "BuildTak-like" sticker
@@ -580,7 +581,7 @@
   #endif
 
   
-  #if ENABLED(ANCYUBIC_KOSSEL_PLUS)
+  #if ENABLED(ANYCUBIC_KOSSEL_PLUS)
     // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
     #define DELTA_PRINTABLE_RADIUS 116.0 // mm
     // Center-to-center distance of the holes in the diagonal push rods.
@@ -652,11 +653,11 @@
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
 #define X_MIN_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
 #define Y_MIN_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
-#define Z_MIN_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
+#define Z_MIN_ENDSTOP_INVERTING (ANYCUBIC_PROBE_VERSION + 0 == 1) // V1 is NO, V2 is NC
 #define X_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true  // set to true to invert the logic of the probe.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
 
 /**
  * Stepper Drivers
